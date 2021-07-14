@@ -31,8 +31,10 @@ echo ${result} >> export/${CTM_SERVER}_${FOLDER}.json
 
 # git config --global user.name "$GIT_USER"
 # git config --global user.password "$GIT_PASS"
-# git push origin master
-
 git add .
 git commit -m "add export xml"
-git push https://$GIT_USER:$GIT_PASS@github.com/dmitrynazm123/autotest.git master
+git push origin master
+
+# git add .
+# git commit -m "add export xml"
+# git push https://$GIT_USER:$GIT_PASS@github.com/dmitrynazm123/autotest.git master
