@@ -1,14 +1,16 @@
 #!/bin/bash
 
-GIT_REPO=github.com/dmitrynazm123/autotest.git
-GIT_BRANCH=master
-GIT_USER=dmitrynazm123
-GIT_PASS=readytogo418
+# GIT_REPO=
+# GIT_BRANCH=
+# GIT_USER=
+# GIT_PASS=
 
 username=qd1
 password=ctm123
 
-git pull https://$GIT_USER:$GIT_PASS@github.com/dmitrynazm123/autotest.git master
+GIT_BRANCH=master
+
+git pull origin $GIT_BRANCH
 
 CTM_SERVER=$1
 FOLDER=$2

@@ -1,13 +1,14 @@
 #!/bin/bash
 
-GIT_REPO=github.com/dmitrynazm123/autotest.git
-GIT_BRANCH=master
-GIT_USER=dmitrynazm123
-GIT_PASS=readytogo418
+# GIT_REPO=
+# GIT_BRANCH=
+# GIT_USER=
+# GIT_PASS=
 
 username=qd1
 password=ctm123
 
+GIT_BRANCH=master
 
 CTM_SERVER=$1
 FOLDER=$2
@@ -31,9 +32,10 @@ echo ${result} >> export/${CTM_SERVER}_${FOLDER}.json
 
 # git config --global user.name "$GIT_USER"
 # git config --global user.password "$GIT_PASS"
+
 git add .
 git commit -m "add export xml"
-git push origin master
+git push origin $GIT_BRANCH
 
 # git add .
 # git commit -m "add export xml"
